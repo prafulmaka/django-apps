@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
-from django.template.loader import render_to_string
 
 monthly_challenges = {
     "january": "Sleep for at least 12 hours a day.",
@@ -15,7 +14,7 @@ monthly_challenges = {
     "september": "Learn something new every day.",
     "october": "Learn a new programming language and practice it everyday.",
     "november": "Go for a run everyday for at least 15 minutes.",
-    "december": "Donate $300."
+    "december": None
 }
 
 # Create your views here.
